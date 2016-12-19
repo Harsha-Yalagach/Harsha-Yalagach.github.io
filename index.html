@@ -1,7 +1,7 @@
 ---
 layout: home
 ---
-<h2>About</h2>
+<h2>About me</h2>
 <p>Hi, my name is Harsha &amp; I am a Software Engineer working in India.</p>
 
 <p>I have been fascinated by technology from an early age and was introduced to Computers at the age of 12. I learned to program in BASIC in 1990 on an IBM 386 machine.</p>
@@ -9,8 +9,16 @@ layout: home
 <p>Later on, I pursued Engineering in Computer Science and after completing my graduation, I have been associated with the IT Industry in India.</p>
 
 <h2>My Projects</h2>
-<p><strong><a href="">SmartOptions</a></strong>, the Next Generation Command Line Parameter processing library for C++.</p>
+{% for project in site.data.projects %}
+  <li class="right"><strong><a href="{{project.url}}">{{project.name}}</a></strong> - {{project.description}}</li>
+{% endfor %}
+<br/>
 
+<h2>Articles</h2>
+{% for article in site.data.articles %}
+  <li class="right"><a href="{{article.url}}">{{article.name}}</a></li>
+{% endfor %}
+<br/>
 
 <h2>Other Links</h2>
 <ul>

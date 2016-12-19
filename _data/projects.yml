@@ -1,4 +1,5 @@
 #Project Sites
 - name: SmartOptions
   url: https://harsha-yalagach.github.io/SmartOptions/
+  description: The Next Generation Command Line Parameter processing library for C++.
 
